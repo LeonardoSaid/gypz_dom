@@ -1,2 +1,2 @@
-# GYPZ- Tech Challenge
+# GYPZ- Tech Challenge Submission
 ## React Frontend
