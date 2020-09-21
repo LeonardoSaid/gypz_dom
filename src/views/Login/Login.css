@@ -1,0 +1,24 @@
+.login-wrapper {
+    padding: 3.75rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 540px;
+}
+
+.login-title {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-subtitle {
+    display: block;
+    text-align: center;
+    padding: .5em 0;
+}
+
+.login-submit-btn {
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
