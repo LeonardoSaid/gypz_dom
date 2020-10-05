@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  gypz_dom:
+    container_name: gypz_dom
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    build:
+      context: ./gypz_dom
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./gypz_dom/:/usr/src/gypz_dom/
+    environment:
+      REACT_APP_HOST_IP_ADDRESS: http://localhost:8000
+
+  gypz_api:
+    container_name: gypz_api
+    build:
+      context: ./gypz_api
+      dockerfile: Dockerfile
+    volumes:
+      - ./gypz_api/:/usr/src/gypz_api/
+    ports:
+      - 8000:8000
+    command: python manage.py runserver 0.0.0.0:8000

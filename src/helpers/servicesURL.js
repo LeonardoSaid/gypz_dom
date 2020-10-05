@@ -1,6 +1,6 @@
 //development
 
-export const baseURL = 'http://localhost:8000';
+export const baseURL = process.env.REACT_APP_HOST_IP_ADDRESS;
 
 //production
 
